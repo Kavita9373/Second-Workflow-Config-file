@@ -7,20 +7,21 @@ jobs:
   Config:
   runs-on: ubuntu-latest
   steps:
-    # -name: Print step started
-    #  run: echo "Started"
+    -name: Print step started
+      run: echo "Started"
 # step to download the code from github repo onto this runner/server i.e [ACTIONS]
 # to get a code from git repo onto the server/runner we use checkout action
 # for actions we use "uses" keyword and for command we use "run" keyword
 # some actions req configuration - we use "with" keyword
     -name: Get code
-      uses: actions/checkout@v6 #this actions/checkout@v6 u will find in marketplace
+     uses: actions/checkout@v6 
+      #this actions/checkout@v6 u will find in marketplace
 
     -name: Install Python
-      uses: actions/setup-python@v6
-      with:
-        python-version: '3.10.1'
+     uses: actions/setup-python@v6
+     with:
+      python-version: '3.10.1'
 
     -name: Reading the config files
-      run: python main.py config.ini
+     run: python main.py config.ini
 
