@@ -2,7 +2,7 @@ name: Get GitHub Metadat
 on: [push,workflow_dispatch]
 jobs:
   output:
-  runs-on : ubuntu-latest
-  steps:
+   runs-on : ubuntu-latest
+   steps:
     - name: get the metadata
       run: echo "${{toJSON(github)}}"
