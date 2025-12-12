@@ -1,7 +1,5 @@
-name: Read config files
-on:
-  - push
-  - workflow_dispatch
+name: Second workflow
+on: [push,workflow_dispatch]
 # Jobs
 jobs:
   Config:
