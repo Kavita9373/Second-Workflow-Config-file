@@ -24,4 +24,10 @@ jobs:
 
     - name: Reading the config files
       run: python main.py config.ini
+  
+  Deploy:
+    runs-on : ubuntu-latest
+    steps:
+      - name : deployment
+        run : echo "Deployment is started......"
 
