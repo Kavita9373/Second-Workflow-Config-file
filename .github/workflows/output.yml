@@ -1,4 +1,4 @@
-name: Get GitHub Metadat
+name: Get GitHub Metadata
 on: [push,workflow_dispatch]
 jobs:
   output:
