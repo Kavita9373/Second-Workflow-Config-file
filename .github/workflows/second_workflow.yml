@@ -5,8 +5,8 @@ on:
 # Jobs
 jobs:
   Config:
-  runs-on: ubuntu-latest
-  steps:
+   runs-on: ubuntu-latest
+   steps:
     -name: Print step started
      run: echo "Started"
 # step to download the code from github repo onto this runner/server i.e [ACTIONS]
